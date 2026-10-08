@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+*.o
+*.obj
+*.dSYM/
+/lab2/src/parent
+/lab2/src/child

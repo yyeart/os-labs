@@ -1,0 +1,82 @@
+12:05:21.388597 execve("./parent", ["./parent"], 0xffffe56696d0 /* 23 vars */) = 0
+12:05:21.389419 brk(NULL)               = 0xbf35a7a52000
+12:05:21.389644 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfc7fd829b000
+12:05:21.389877 faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:05:21.390091 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:05:21.390313 fstat(3, {st_mode=S_IFREG|0644, st_size=24715, ...}) = 0
+12:05:21.393867 mmap(NULL, 24715, PROT_READ, MAP_PRIVATE, 3, 0) = 0xfc7fd8294000
+12:05:21.393993 close(3)                = 0
+12:05:21.394171 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:05:21.394327 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0@\0\0\0\0\0\0\0\350:\32\0\0\0\0\0\0\0\0\0@\08\0\n\0@\0=\0<\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000a\26\0\0\0\0\0000a\26\0\0\0\0\0000a\26\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\201\237\31\0\0\0\0\0\201\237\31\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\0\321\31\0\0\0\0\0\0\321\32\0\0\0\0\0"..., 832) = 832
+12:05:21.394471 fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0
+12:05:21.394615 mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xfc7fd8094000
+12:05:21.394772 mmap(0xfc7fd80a0000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfc7fd80a0000
+12:05:21.394967 munmap(0xfc7fd8094000, 49152) = 0
+12:05:21.395096 munmap(0xfc7fd825e000, 16272) = 0
+12:05:21.395217 mprotect(0xfc7fd823a000, 77824, PROT_NONE) = 0
+12:05:21.395368 mmap(0xfc7fd824d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0xfc7fd824d000
+12:05:21.395522 mmap(0xfc7fd8252000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xfc7fd8252000
+12:05:21.395665 close(3)                = 0
+12:05:21.395855 set_tid_address(0xfc7fd829bf90) = 3039
+12:05:21.396002 set_robust_list(0xfc7fd829bfa0, 24) = 0
+12:05:21.396134 rseq(0xfc7fd829c5e0, 0x20, 0, 0xd428bc00) = 0
+12:05:21.396333 mprotect(0xfc7fd824d000, 12288, PROT_READ) = 0
+12:05:21.396466 mprotect(0xbf35a543f000, 4096, PROT_READ) = 0
+12:05:21.396612 mprotect(0xfc7fd82a0000, 8192, PROT_READ) = 0
+12:05:21.396765 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:05:21.396924 munmap(0xfc7fd8294000, 24715) = 0
+12:05:21.397114 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+12:05:21.397305 write(2, "enter filename for child 1:\n", 28) = 28
+12:05:21.397874 getrandom("\x58\x90\x61\xc0\x77\xb8\x0b\xa0", 8, GRND_NONBLOCK) = 8
+12:05:21.398228 brk(NULL)               = 0xbf35a7a52000
+12:05:21.398329 brk(0xbf35a7a73000)     = 0xbf35a7a73000
+12:05:21.398442 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+12:05:21.398559 read(0, "results/first.txt\n", 1024) = 18
+12:05:50.655446 write(2, "enter filename for child 2:\n", 28) = 28
+12:05:50.656135 read(0, "results/second.txt\n", 1024) = 19
+12:05:55.320727 openat(AT_FDCWD, "results/first.txt", O_WRONLY|O_CREAT, 0644) = 3
+12:05:55.321387 openat(AT_FDCWD, "results/second.txt", O_WRONLY|O_CREAT, 0644) = 4
+12:05:55.321748 ftruncate(3, 0)         = 0
+12:05:55.322175 ftruncate(4, 0)         = 0
+12:05:55.322459 pipe2([5, 6], 0)        = 0
+12:05:55.322860 pipe2([7, 8], 0)        = 0
+12:05:55.323147 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xfc7fd829bf90) = 3040
+12:05:55.323886 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xfc7fd829bf90) = 3041
+12:05:55.324526 close(5)                = 0
+12:05:55.324665 close(3)                = 0
+12:05:55.324783 close(7)                = 0
+12:05:55.324949 close(4)                = 0
+12:05:55.325140 read(0, "Hello World\n", 1024) = 12
+12:06:00.468907 getpid()                = 3039
+12:06:00.469117 write(2, "parent PID=3039: sending line 1, bytes=12 to child 1, PID=3040\n", 63) = 63
+12:06:00.469443 write(6, "Hello World\n", 12) = 12
+12:06:00.469618 read(0, "123\n", 1024)  = 4
+12:06:03.841592 getpid()                = 3039
+12:06:03.841928 write(2, "parent PID=3039: sending line 2, bytes=4 to child 2, PID=3041\n", 62) = 62
+12:06:03.842455 write(8, "123\n", 4)    = 4
+12:06:03.842719 read(0, "BCA\n", 1024)  = 4
+12:06:07.338428 getpid()                = 3039
+12:06:07.338889 write(2, "parent PID=3039: sending line 3, bytes=4 to child 1, PID=3040\n", 62) = 62
+12:06:07.339416 write(6, "BCA\n", 4)    = 4
+12:06:07.339735 read(0, "\n", 1024)     = 1
+12:06:08.898607 getpid()                = 3039
+12:06:08.898754 write(2, "parent PID=3039: sending line 4, bytes=1 to child 2, PID=3041\n", 62) = 62
+12:06:08.898939 write(8, "\n", 1)       = 1
+12:06:08.899057 read(0, "Lorem ipsum\n", 1024) = 12
+12:06:36.939053 getpid()                = 3039
+12:06:36.939345 write(2, "parent PID=3039: sending line 5, bytes=12 to child 1, PID=3040\n", 63) = 63
+12:06:36.939708 write(6, "Lorem ipsum\n", 12) = 12
+12:06:36.940045 read(0, "Vvedite text\n", 1024) = 13
+12:06:59.710902 getpid()                = 3039
+12:06:59.711245 write(2, "parent PID=3039: sending line 6, bytes=13 to child 2, PID=3041\n", 63) = 63
+12:06:59.711376 write(8, "Vvedite text\n", 13) = 13
+12:06:59.711719 read(0, "", 1024)       = 0
+12:07:01.551134 close(6)                = 0
+12:07:01.551339 close(8)                = 0
+12:07:01.551615 wait4(3040, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 3040
+12:07:01.552940 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3041, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12:07:01.553143 write(2, "child PID=3040 exited with code 0\n", 34) = 34
+12:07:01.553595 wait4(3041, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 3041
+12:07:01.554011 write(2, "child PID=3041 exited with code 0\n", 34) = 34
+12:07:01.554195 exit_group(0)           = ?
+12:07:01.554833 +++ exited with 0 +++

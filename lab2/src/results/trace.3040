@@ -1,0 +1,53 @@
+12:05:55.323940 set_robust_list(0xfc7fd829bfa0, 24) = 0
+12:05:55.324434 dup3(5, 0, 0)           = 0
+12:05:55.324682 dup3(3, 1, 0)           = 1
+12:05:55.324761 close(5)                = 0
+12:05:55.324881 close(6)                = 0
+12:05:55.325048 close(3)                = 0
+12:05:55.325113 close(7)                = 0
+12:05:55.325185 close(8)                = 0
+12:05:55.325386 close(4)                = 0
+12:05:55.325536 execve("./child", ["child"], 0xffffca3f2318 /* 23 vars */) = 0
+12:05:55.326421 brk(NULL)               = 0xbe7133427000
+12:05:55.326631 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xedbd07737000
+12:05:55.327099 faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:05:55.327303 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:05:55.327541 fstat(3, {st_mode=S_IFREG|0644, st_size=24715, ...}) = 0
+12:05:55.327710 mmap(NULL, 24715, PROT_READ, MAP_PRIVATE, 3, 0) = 0xedbd07730000
+12:05:55.327984 close(3)                = 0
+12:05:55.328143 openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:05:55.328330 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0@\0\0\0\0\0\0\0\350:\32\0\0\0\0\0\0\0\0\0@\08\0\n\0@\0=\0<\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000a\26\0\0\0\0\0000a\26\0\0\0\0\0000a\26\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\201\237\31\0\0\0\0\0\201\237\31\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\0\321\31\0\0\0\0\0\0\321\32\0\0\0\0\0"..., 832) = 832
+12:05:55.328518 fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0
+12:05:55.328707 mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xedbd07530000
+12:05:55.328904 mmap(0xedbd07530000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xedbd07530000
+12:05:55.329061 munmap(0xedbd076ee000, 65424) = 0
+12:05:55.329166 mprotect(0xedbd076ca000, 77824, PROT_NONE) = 0
+12:05:55.329318 mmap(0xedbd076dd000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0xedbd076dd000
+12:05:55.329418 mmap(0xedbd076e2000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xedbd076e2000
+12:05:55.329543 close(3)                = 0
+12:05:55.329681 set_tid_address(0xedbd07737f90) = 3040
+12:05:55.329881 set_robust_list(0xedbd07737fa0, 24) = 0
+12:05:55.330005 rseq(0xedbd077385e0, 0x20, 0, 0xd428bc00) = 0
+12:05:55.330219 mprotect(0xedbd076dd000, 12288, PROT_READ) = 0
+12:05:55.330328 mprotect(0xbe710334f000, 4096, PROT_READ) = 0
+12:05:55.330453 mprotect(0xedbd0773c000, 8192, PROT_READ) = 0
+12:05:55.330648 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:05:55.330746 munmap(0xedbd07730000, 24715) = 0
+12:05:55.330931 getpid()                = 3040
+12:05:55.331068 getppid()               = 3039
+12:05:55.331195 write(2, "child: PID=3040, parent PID=3039\n", 33) = 33
+12:05:55.331494 getrandom("\x34\x3d\xe2\xd3\x11\xf2\x61\xa1", 8, GRND_NONBLOCK) = 8
+12:05:55.331770 brk(NULL)               = 0xbe7133427000
+12:05:55.332087 brk(0xbe7133448000)     = 0xbe7133448000
+12:05:55.332218 fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+12:05:55.332336 read(0, "Hello World\n", 4096) = 12
+12:06:00.469665 write(1, "dlroW olleH\n", 12) = 12
+12:06:00.469852 read(0, "BCA\n", 4096)  = 4
+12:06:07.339782 write(1, "ACB\n", 4)    = 4
+12:06:07.340002 read(0, "Lorem ipsum\n", 4096) = 12
+12:06:36.940084 write(1, "muspi meroL\n", 12) = 12
+12:06:36.940289 read(0, "", 4096)       = 0
+12:07:01.551458 close(0)                = 0
+12:07:01.551654 close(1)                = 0
+12:07:01.551874 exit_group(0)           = ?
+12:07:01.552653 +++ exited with 0 +++

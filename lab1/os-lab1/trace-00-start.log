@@ -1,0 +1,119 @@
+2044  17:13:53.583909 execve("/usr/bin/sqlite3", ["sqlite3", "-batch", "-bail", ":memory:", "SELECT 1;"], 0xffffe16278d0 /* 23 vars */) = 0 <0.000449>
+2044  17:13:53.584885 brk(NULL)         = 0xba7be09a4000 <0.000050>
+2044  17:13:53.585031 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe819b89a3000 <0.000057>
+2044  17:13:53.585170 faccessat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000100>
+2044  17:13:53.585621 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache> <0.000383>
+2044  17:13:53.586157 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=22163, ...}) = 0 <0.000074>
+2044  17:13:53.589493 mmap(NULL, 22163, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0xe819b899d000 <0.000067>
+2044  17:13:53.589637 close(3</etc/ld.so.cache>) = 0 <0.000074>
+2044  17:13:53.589801 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libsqlite3.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6> <0.000057>
+2044  17:13:53.589978 read(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000074>
+2044  17:13:53.590150 fstat(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, {st_mode=S_IFREG|0644, st_size=1526192, ...}) = 0 <0.000058>
+2044  17:13:53.590345 mmap(NULL, 1656968, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b87d5000 <0.000074>
+2044  17:13:53.590524 mmap(0xe819b87e0000, 1591432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, 0) = 0xe819b87e0000 <0.000107>
+2044  17:13:53.590728 munmap(0xe819b87d5000, 45056) = 0 <0.000043>
+2044  17:13:53.590868 munmap(0xe819b8965000, 18568) = 0 <0.000097>
+2044  17:13:53.591063 mprotect(0xe819b8945000, 94208, PROT_NONE) = 0 <0.000065>
+2044  17:13:53.591205 mmap(0xe819b895c000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, 0x16c000) = 0xe819b895c000 <0.000056>
+2044  17:13:53.591362 close(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>) = 0 <0.000058>
+2044  17:13:53.591489 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2> <0.000058>
+2044  17:13:53.591639 read(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000060>
+2044  17:13:53.591777 fstat(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, {st_mode=S_IFREG|0644, st_size=417504, ...}) = 0 <0.000070>
+2044  17:13:53.591932 mmap(NULL, 486808, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b8769000 <0.000129>
+2044  17:13:53.592144 mmap(0xe819b8770000, 421272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, 0) = 0xe819b8770000 <0.000075>
+2044  17:13:53.592288 munmap(0xe819b8769000, 28672) = 0 <0.000055>
+2044  17:13:53.592409 munmap(0xe819b87d7000, 36248) = 0 <0.000043>
+2044  17:13:53.592515 mprotect(0xe819b87c0000, 57344, PROT_NONE) = 0 <0.000054>
+2044  17:13:53.592630 mmap(0xe819b87ce000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, 0x5e000) = 0xe819b87ce000 <0.000041>
+2044  17:13:53.592734 mmap(0xe819b87d6000, 3480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe819b87d6000 <0.000058>
+2044  17:13:53.592864 close(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>) = 0 <0.000030>
+2044  17:13:53.592971 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libz.so.1.3> <0.000043>
+2044  17:13:53.593078 read(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000045>
+2044  17:13:53.593186 fstat(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, {st_mode=S_IFREG|0644, st_size=133272, ...}) = 0 <0.000043>
+2044  17:13:53.593322 mmap(NULL, 262312, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b872f000 <0.000042>
+2044  17:13:53.593415 mmap(0xe819b8730000, 196776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, 0) = 0xe819b8730000 <0.000049>
+2044  17:13:53.593519 munmap(0xe819b872f000, 4096) = 0 <0.000044>
+2044  17:13:53.593617 munmap(0xe819b8761000, 57512) = 0 <0.000054>
+2044  17:13:53.593725 mprotect(0xe819b874a000, 86016, PROT_NONE) = 0 <0.000082>
+2044  17:13:53.593868 mmap(0xe819b875f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, 0x1f000) = 0xe819b875f000 <0.000045>
+2044  17:13:53.594009 close(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>) = 0 <0.000051>
+2044  17:13:53.594130 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6> <0.000048>
+2044  17:13:53.594241 read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832 <0.000036>
+2044  17:13:53.594348 fstat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0 <0.000048>
+2044  17:13:53.594454 mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b8562000 <0.000036>
+2044  17:13:53.594551 mmap(0xe819b8570000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xe819b8570000 <0.000053>
+2044  17:13:53.594665 munmap(0xe819b8562000, 57344) = 0 <0.000044>
+2044  17:13:53.594771 munmap(0xe819b872e000, 8080) = 0 <0.000045>
+2044  17:13:53.594876 mprotect(0xe819b870a000, 77824, PROT_NONE) = 0 <0.000060>
+2044  17:13:53.595000 mmap(0xe819b871d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0x19d000) = 0xe819b871d000 <0.000053>
+2044  17:13:53.595125 mmap(0xe819b8722000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe819b8722000 <0.000045>
+2044  17:13:53.595246 close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0 <0.000048>
+2044  17:13:53.595359 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libm.so.6> <0.000043>
+2044  17:13:53.595457 read(3</usr/lib/aarch64-linux-gnu/libm.so.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000046>
+2044  17:13:53.595564 fstat(3</usr/lib/aarch64-linux-gnu/libm.so.6>, {st_mode=S_IFREG|0644, st_size=591800, ...}) = 0 <0.000036>
+2044  17:13:53.595666 mmap(NULL, 720920, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b84bf000 <0.000045>
+2044  17:13:53.595768 mmap(0xe819b84c0000, 655384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0) = 0xe819b84c0000 <0.000039>
+2044  17:13:53.595865 munmap(0xe819b84bf000, 4096) = 0 <0.000046>
+2044  17:13:53.595975 munmap(0xe819b8561000, 57368) = 0 <0.000040>
+2044  17:13:53.596059 mprotect(0xe819b8545000, 106496, PROT_NONE) = 0 <0.000043>
+2044  17:13:53.596160 mmap(0xe819b855f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0x8f000) = 0xe819b855f000 <0.000053>
+2044  17:13:53.596313 close(3</usr/lib/aarch64-linux-gnu/libm.so.6>) = 0 <0.000049>
+2044  17:13:53.596420 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4> <0.000060>
+2044  17:13:53.596533 read(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000040>
+2044  17:13:53.596620 fstat(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, {st_mode=S_IFREG|0644, st_size=265416, ...}) = 0 <0.000046>
+2044  17:13:53.596712 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe819b899b000 <0.000047>
+2044  17:13:53.596827 mmap(NULL, 329928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xe819b846f000 <0.000045>
+2044  17:13:53.596925 mmap(0xe819b8470000, 264392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, 0) = 0xe819b8470000 <0.000081>
+2044  17:13:53.597079 munmap(0xe819b846f000, 4096) = 0 <0.000040>
+2044  17:13:53.597163 munmap(0xe819b84b1000, 59592) = 0 <0.000034>
+2044  17:13:53.597254 mprotect(0xe819b849f000, 53248, PROT_NONE) = 0 <0.000049>
+2044  17:13:53.597348 mmap(0xe819b84ac000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, 0x3c000) = 0xe819b84ac000 <0.000039>
+2044  17:13:53.597462 close(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>) = 0 <0.000037>
+2044  17:13:53.597579 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe819b8999000 <0.000035>
+2044  17:13:53.597665 set_tid_address(0xe819b89990f0) = 2044 <0.000034>
+2044  17:13:53.597744 set_robust_list(0xe819b8999100, 24) = 0 <0.000046>
+2044  17:13:53.597842 rseq(0xe819b8999740, 0x20, 0, 0xd428bc00) = 0 <0.000047>
+2044  17:13:53.598053 mprotect(0xe819b871d000, 12288, PROT_READ) = 0 <0.000036>
+2044  17:13:53.598213 mprotect(0xe819b84ac000, 16384, PROT_READ) = 0 <0.000038>
+2044  17:13:53.598319 mprotect(0xe819b855f000, 4096, PROT_READ) = 0 <0.000057>
+2044  17:13:53.598427 mprotect(0xe819b875f000, 4096, PROT_READ) = 0 <0.000047>
+2044  17:13:53.598640 mprotect(0xe819b87ce000, 8192, PROT_READ) = 0 <0.000038>
+2044  17:13:53.598899 mprotect(0xe819b895c000, 16384, PROT_READ) = 0 <0.000057>
+2044  17:13:53.599067 mprotect(0xba7bae55e000, 8192, PROT_READ) = 0 <0.000048>
+2044  17:13:53.599166 mprotect(0xe819b89a8000, 8192, PROT_READ) = 0 <0.000034>
+2044  17:13:53.599269 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000039>
+2044  17:13:53.599368 munmap(0xe819b899d000, 22163) = 0 <0.000043>
+2044  17:13:53.599488 ioctl(2</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000040>
+2044  17:13:53.599601 ioctl(1</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000039>
+2044  17:13:53.599702 ioctl(0</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000034>
+2044  17:13:53.599832 rt_sigaction(SIGINT, {sa_handler=0xba7bae51bee0, sa_mask=[INT], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000045>
+2044  17:13:53.599961 getrandom("\x82\xce\x7c\x88\x9f\x81\x29\x75", 8, GRND_NONBLOCK) = 8 <0.000035>
+2044  17:13:53.600059 brk(NULL)         = 0xba7be09a4000 <0.000047>
+2044  17:13:53.600149 brk(0xba7be09c5000) = 0xba7be09c5000 <0.000036>
+2044  17:13:53.600289 faccessat(AT_FDCWD</home/ubuntu/os-lab1>, ":memory:", F_OK) = -1 ENOENT (No such file or directory) <0.000045>
+2044  17:13:53.600392 getuid()          = 1000 <0.000045>
+2044  17:13:53.600497 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3<socket:[14557]> <0.000051>
+2044  17:13:53.600602 connect(3<socket:[14557]>, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000054>
+2044  17:13:53.600697 close(3<socket:[14557]>) = 0 <0.000048>
+2044  17:13:53.600807 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3<socket:[14558]> <0.000054>
+2044  17:13:53.600913 connect(3<socket:[14558]>, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000070>
+2044  17:13:53.601035 close(3<socket:[14558]>) = 0 <0.000033>
+2044  17:13:53.601132 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0 <0.000038>
+2044  17:13:53.601233 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000040>
+2044  17:13:53.601326 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3</etc/nsswitch.conf> <0.000029>
+2044  17:13:53.601407 fstat(3</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000042>
+2044  17:13:53.601499 read(3</etc/nsswitch.conf>, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526 <0.000046>
+2044  17:13:53.601602 read(3</etc/nsswitch.conf>, "", 4096) = 0 <0.000031>
+2044  17:13:53.601673 fstat(3</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000033>
+2044  17:13:53.601757 close(3</etc/nsswitch.conf>) = 0 <0.000027>
+2044  17:13:53.601849 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3</etc/passwd> <0.000038>
+2044  17:13:53.601941 fstat(3</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1656, ...}) = 0 <0.000044>
+2044  17:13:53.602030 lseek(3</etc/passwd>, 0, SEEK_SET) = 0 <0.000031>
+2044  17:13:53.602105 read(3</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1656 <0.000031>
+2044  17:13:53.602196 close(3</etc/passwd>) = 0 <0.000051>
+2044  17:13:53.602296 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/.sqliterc", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000039>
+2044  17:13:53.602391 openat(AT_FDCWD</home/ubuntu/os-lab1>, ":memory:", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000038>
+2044  17:13:53.602973 fstat(1</dev/pts/0>, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0 <0.000029>
+2044  17:13:53.603059 write(1</dev/pts/0>, "1\n", 2) = 2 <0.000035>
+2044  17:13:53.603170 exit_group(0)     = ?
+2044  17:13:53.603415 +++ exited with 0 +++

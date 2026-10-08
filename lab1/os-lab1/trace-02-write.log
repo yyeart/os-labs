@@ -1,0 +1,188 @@
+2062  17:15:53.932490 execve("/usr/bin/sqlite3", ["sqlite3", "-batch", "-bail", "lab1.db", "BEGIN; INSERT INTO notes(note) V"...], 0xffffe273deb0 /* 23 vars */) = 0 <0.000354>
+2062  17:15:53.933252 brk(NULL)         = 0xb8d93bc38000 <0.000067>
+2062  17:15:53.933450 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2d73b20a000 <0.000078>
+2062  17:15:53.933608 faccessat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000074>
+2062  17:15:53.933856 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache> <0.000140>
+2062  17:15:53.934145 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=22163, ...}) = 0 <0.000063>
+2062  17:15:53.934296 mmap(NULL, 22163, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0xf2d73b204000 <0.000064>
+2062  17:15:53.934430 close(3</etc/ld.so.cache>) = 0 <0.000050>
+2062  17:15:53.934562 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libsqlite3.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6> <0.000070>
+2062  17:15:53.934716 read(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000054>
+2062  17:15:53.934838 fstat(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, {st_mode=S_IFREG|0644, st_size=1526192, ...}) = 0 <0.000041>
+2062  17:15:53.935026 mmap(NULL, 1656968, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73b03c000 <0.000055>
+2062  17:15:53.935150 mmap(0xf2d73b040000, 1591432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, 0) = 0xf2d73b040000 <0.000070>
+2062  17:15:53.935316 munmap(0xf2d73b03c000, 16384) = 0 <0.000082>
+2062  17:15:53.935500 munmap(0xf2d73b1c5000, 47240) = 0 <0.000072>
+2062  17:15:53.935663 mprotect(0xf2d73b1a5000, 94208, PROT_NONE) = 0 <0.000058>
+2062  17:15:53.935797 mmap(0xf2d73b1bc000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>, 0x16c000) = 0xf2d73b1bc000 <0.000066>
+2062  17:15:53.935988 close(3</usr/lib/aarch64-linux-gnu/libsqlite3.so.0.8.6>) = 0 <0.000074>
+2062  17:15:53.936172 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2> <0.000065>
+2062  17:15:53.936315 read(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000073>
+2062  17:15:53.936487 fstat(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, {st_mode=S_IFREG|0644, st_size=417504, ...}) = 0 <0.000071>
+2062  17:15:53.936658 mmap(NULL, 486808, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73afc9000 <0.000054>
+2062  17:15:53.936793 mmap(0xf2d73afd0000, 421272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, 0) = 0xf2d73afd0000 <0.000063>
+2062  17:15:53.936933 munmap(0xf2d73afc9000, 28672) = 0 <0.000063>
+2062  17:15:53.937068 munmap(0xf2d73b037000, 36248) = 0 <0.000067>
+2062  17:15:53.937206 mprotect(0xf2d73b020000, 57344, PROT_NONE) = 0 <0.000052>
+2062  17:15:53.937340 mmap(0xf2d73b02e000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>, 0x5e000) = 0xf2d73b02e000 <0.000062>
+2062  17:15:53.937484 mmap(0xf2d73b036000, 3480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf2d73b036000 <0.000061>
+2062  17:15:53.937615 close(3</usr/lib/aarch64-linux-gnu/libreadline.so.8.2>) = 0 <0.000102>
+2062  17:15:53.937828 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libz.so.1.3> <0.000098>
+2062  17:15:53.938067 read(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000055>
+2062  17:15:53.938194 fstat(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, {st_mode=S_IFREG|0644, st_size=133272, ...}) = 0 <0.000040>
+2062  17:15:53.938318 mmap(NULL, 262312, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73af8f000 <0.000059>
+2062  17:15:53.938428 mmap(0xf2d73af90000, 196776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, 0) = 0xf2d73af90000 <0.000062>
+2062  17:15:53.938557 munmap(0xf2d73af8f000, 4096) = 0 <0.000035>
+2062  17:15:53.938651 munmap(0xf2d73afc1000, 57512) = 0 <0.000042>
+2062  17:15:53.938750 mprotect(0xf2d73afaa000, 86016, PROT_NONE) = 0 <0.000063>
+2062  17:15:53.938868 mmap(0xf2d73afbf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libz.so.1.3>, 0x1f000) = 0xf2d73afbf000 <0.000042>
+2062  17:15:53.939014 close(3</usr/lib/aarch64-linux-gnu/libz.so.1.3>) = 0 <0.000039>
+2062  17:15:53.939124 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6> <0.000060>
+2062  17:15:53.939311 read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832 <0.000052>
+2062  17:15:53.939417 fstat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0 <0.000041>
+2062  17:15:53.939516 mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73adc2000 <0.000045>
+2062  17:15:53.939619 mmap(0xf2d73add0000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xf2d73add0000 <0.000054>
+2062  17:15:53.939730 munmap(0xf2d73adc2000, 57344) = 0 <0.000044>
+2062  17:15:53.939829 munmap(0xf2d73af8e000, 8080) = 0 <0.000045>
+2062  17:15:53.939935 mprotect(0xf2d73af6a000, 77824, PROT_NONE) = 0 <0.000068>
+2062  17:15:53.940078 mmap(0xf2d73af7d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0x19d000) = 0xf2d73af7d000 <0.000052>
+2062  17:15:53.940199 mmap(0xf2d73af82000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf2d73af82000 <0.000046>
+2062  17:15:53.940302 close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0 <0.000057>
+2062  17:15:53.940427 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libm.so.6> <0.000053>
+2062  17:15:53.940540 read(3</usr/lib/aarch64-linux-gnu/libm.so.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000052>
+2062  17:15:53.940646 fstat(3</usr/lib/aarch64-linux-gnu/libm.so.6>, {st_mode=S_IFREG|0644, st_size=591800, ...}) = 0 <0.000039>
+2062  17:15:53.940753 mmap(NULL, 720920, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73ad1f000 <0.000051>
+2062  17:15:53.940850 mmap(0xf2d73ad20000, 655384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0) = 0xf2d73ad20000 <0.000055>
+2062  17:15:53.940979 munmap(0xf2d73ad1f000, 4096) = 0 <0.000050>
+2062  17:15:53.941099 munmap(0xf2d73adc1000, 57368) = 0 <0.000044>
+2062  17:15:53.941205 mprotect(0xf2d73ada5000, 106496, PROT_NONE) = 0 <0.000043>
+2062  17:15:53.941299 mmap(0xf2d73adbf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libm.so.6>, 0x8f000) = 0xf2d73adbf000 <0.000045>
+2062  17:15:53.941434 close(3</usr/lib/aarch64-linux-gnu/libm.so.6>) = 0 <0.000054>
+2062  17:15:53.941553 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/lib/aarch64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4> <0.000060>
+2062  17:15:53.941685 read(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000051>
+2062  17:15:53.941790 fstat(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, {st_mode=S_IFREG|0644, st_size=265416, ...}) = 0 <0.000035>
+2062  17:15:53.941877 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2d73b202000 <0.000046>
+2062  17:15:53.942001 mmap(NULL, 329928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf2d73accf000 <0.000031>
+2062  17:15:53.942086 mmap(0xf2d73acd0000, 264392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, 0) = 0xf2d73acd0000 <0.000046>
+2062  17:15:53.942187 munmap(0xf2d73accf000, 4096) = 0 <0.000038>
+2062  17:15:53.942278 munmap(0xf2d73ad11000, 59592) = 0 <0.000047>
+2062  17:15:53.942379 mprotect(0xf2d73acff000, 53248, PROT_NONE) = 0 <0.000039>
+2062  17:15:53.942472 mmap(0xf2d73ad0c000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>, 0x3c000) = 0xf2d73ad0c000 <0.000039>
+2062  17:15:53.942575 close(3</usr/lib/aarch64-linux-gnu/libtinfo.so.6.4>) = 0 <0.000042>
+2062  17:15:53.942699 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf2d73b200000 <0.000044>
+2062  17:15:53.942791 set_tid_address(0xf2d73b2000f0) = 2062 <0.000041>
+2062  17:15:53.942879 set_robust_list(0xf2d73b200100, 24) = 0 <0.000043>
+2062  17:15:53.942976 rseq(0xf2d73b200740, 0x20, 0, 0xd428bc00) = 0 <0.000035>
+2062  17:15:53.943130 mprotect(0xf2d73af7d000, 12288, PROT_READ) = 0 <0.000044>
+2062  17:15:53.943270 mprotect(0xf2d73ad0c000, 16384, PROT_READ) = 0 <0.000031>
+2062  17:15:53.943353 mprotect(0xf2d73adbf000, 4096, PROT_READ) = 0 <0.000039>
+2062  17:15:53.943435 mprotect(0xf2d73afbf000, 4096, PROT_READ) = 0 <0.000042>
+2062  17:15:53.943604 mprotect(0xf2d73b02e000, 8192, PROT_READ) = 0 <0.000040>
+2062  17:15:53.943783 mprotect(0xf2d73b1bc000, 16384, PROT_READ) = 0 <0.000039>
+2062  17:15:53.943974 mprotect(0xb8d90537e000, 8192, PROT_READ) = 0 <0.000043>
+2062  17:15:53.944076 mprotect(0xf2d73b20f000, 8192, PROT_READ) = 0 <0.000055>
+2062  17:15:53.944196 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000039>
+2062  17:15:53.944291 munmap(0xf2d73b204000, 22163) = 0 <0.000050>
+2062  17:15:53.944405 ioctl(2</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000039>
+2062  17:15:53.944520 ioctl(1</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000047>
+2062  17:15:53.944626 ioctl(0</dev/pts/0>, TCGETS, {c_iflag=ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B9600|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|IEXTEN|ECHOCTL|ECHOKE|PENDIN, ...}) = 0 <0.000038>
+2062  17:15:53.944757 rt_sigaction(SIGINT, {sa_handler=0xb8d90533bee0, sa_mask=[INT], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000042>
+2062  17:15:53.944893 getrandom("\x95\x16\xa8\x1f\x2f\x39\x77\x6a", 8, GRND_NONBLOCK) = 8 <0.000039>
+2062  17:15:53.945019 brk(NULL)         = 0xb8d93bc38000 <0.000035>
+2062  17:15:53.945112 brk(0xb8d93bc59000) = 0xb8d93bc59000 <0.000043>
+2062  17:15:53.945266 faccessat(AT_FDCWD</home/ubuntu/os-lab1>, "lab1.db", F_OK) = 0 <0.000039>
+2062  17:15:53.945371 openat(AT_FDCWD</home/ubuntu/os-lab1>, "lab1.db", O_RDONLY) = 3</home/ubuntu/os-lab1/lab1.db> <0.000037>
+2062  17:15:53.945470 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000027>
+2062  17:15:53.945547 read(3</home/ubuntu/os-lab1/lab1.db>, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096) = 4096 <0.000043>
+2062  17:15:53.945633 close(3</home/ubuntu/os-lab1/lab1.db>) = 0 <0.000037>
+2062  17:15:53.945730 getcwd("/home/ubuntu/os-lab1", 4096) = 21 <0.000049>
+2062  17:15:53.945822 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0 <0.000034>
+2062  17:15:53.945896 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0 <0.000042>
+2062  17:15:53.945997 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0 <0.000032>
+2062  17:15:53.946069 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0 <0.000033>
+2062  17:15:53.946147 getpid()          = 2062 <0.000032>
+2062  17:15:53.946208 getpid()          = 2062 <0.000033>
+2062  17:15:53.946282 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 3</home/ubuntu/os-lab1/lab1.db> <0.000035>
+2062  17:15:53.946372 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000026>
+2062  17:15:53.946446 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000037>
+2062  17:15:53.946524 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0 <0.000033>
+2062  17:15:53.946609 pread64(3</home/ubuntu/os-lab1/lab1.db>, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 100, 0) = 100 <0.000036>
+2062  17:15:53.946792 getuid()          = 1000 <0.000041>
+2062  17:15:53.946895 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[15481]> <0.000061>
+2062  17:15:53.947033 connect(4<socket:[15481]>, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000055>
+2062  17:15:53.947140 close(4<socket:[15481]>) = 0 <0.000046>
+2062  17:15:53.947241 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4<socket:[15482]> <0.000040>
+2062  17:15:53.947326 connect(4<socket:[15482]>, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000034>
+2062  17:15:53.947408 close(4<socket:[15482]>) = 0 <0.000029>
+2062  17:15:53.947489 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0 <0.000036>
+2062  17:15:53.947595 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000030>
+2062  17:15:53.947689 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4</etc/nsswitch.conf> <0.000066>
+2062  17:15:53.947816 fstat(4</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000032>
+2062  17:15:53.947901 read(4</etc/nsswitch.conf>, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526 <0.000034>
+2062  17:15:53.948000 read(4</etc/nsswitch.conf>, "", 4096) = 0 <0.000043>
+2062  17:15:53.948107 fstat(4</etc/nsswitch.conf>, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0 <0.000067>
+2062  17:15:53.948224 close(4</etc/nsswitch.conf>) = 0 <0.000040>
+2062  17:15:53.948327 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4</etc/passwd> <0.000035>
+2062  17:15:53.948410 fstat(4</etc/passwd>, {st_mode=S_IFREG|0644, st_size=1656, ...}) = 0 <0.000034>
+2062  17:15:53.948490 lseek(4</etc/passwd>, 0, SEEK_SET) = 0 <0.000036>
+2062  17:15:53.948572 read(4</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1656 <0.000026>
+2062  17:15:53.948645 close(4</etc/passwd>) = 0 <0.000040>
+2062  17:15:53.948733 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/.sqliterc", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000035>
+2062  17:15:53.948876 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0 <0.000062>
+2062  17:15:53.948989 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0 <0.000025>
+2062  17:15:53.949056 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0 <0.000029>
+2062  17:15:53.949132 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-journal", 0xffffd9e6c258, 0) = -1 ENOENT (No such file or directory) <0.000044>
+2062  17:15:53.949231 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-wal", 0xffffd9e6c258, 0) = -1 ENOENT (No such file or directory) <0.000036>
+2062  17:15:53.949330 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000045>
+2062  17:15:53.949419 brk(0xb8d93bc81000) = 0xb8d93bc81000 <0.000049>
+2062  17:15:53.949526 pread64(3</home/ubuntu/os-lab1/lab1.db>, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 0) = 4096 <0.000039>
+2062  17:15:53.949712 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000045>
+2062  17:15:53.949854 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0 <0.000036>
+2062  17:15:53.949938 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0 <0.000035>
+2062  17:15:53.950021 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0 <0.000031>
+2062  17:15:53.950091 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-journal", 0xffffd9e6c5d8, 0) = -1 ENOENT (No such file or directory) <0.000033>
+2062  17:15:53.950175 pread64(3</home/ubuntu/os-lab1/lab1.db>, "\0\0\0\1\0\0\0\2\0\0\0\0\0\0\0\0", 16, 24) = 16 <0.000028>
+2062  17:15:53.950246 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-wal", 0xffffd9e6c5d8, 0) = -1 ENOENT (No such file or directory) <0.000045>
+2062  17:15:53.950340 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000029>
+2062  17:15:53.950411 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741825, l_len=1}) = 0 <0.000038>
+2062  17:15:53.950507 pread64(3</home/ubuntu/os-lab1/lab1.db>, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 4096) = 4096 <0.000034>
+2062  17:15:53.950586 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0 <0.000025>
+2062  17:15:53.950655 getpid()          = 2062 <0.000026>
+2062  17:15:53.950715 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0 <0.000031>
+2062  17:15:53.950786 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-journal", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 4</home/ubuntu/os-lab1/lab1.db-journal> <0.000082>
+2062  17:15:53.950913 fstat(4</home/ubuntu/os-lab1/lab1.db-journal>, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000047>
+2062  17:15:53.950999 geteuid()         = 1000 <0.000029>
+2062  17:15:53.951061 getpid()          = 2062 <0.000020>
+2062  17:15:53.951124 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 5</dev/urandom> <0.000034>
+2062  17:15:53.951221 read(5</dev/urandom>, "\251v\276\313\305\212\7g\245@'\353\t(\vqJ\372U\200\202\347n\374\33\306\336\335\224\240\230*"..., 44) = 44 <0.000041>
+2062  17:15:53.951306 close(5</dev/urandom>) = 0 <0.000038>
+2062  17:15:53.951382 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\0\0\0\0\0\0\0\0\0\0\0\0\315\25>\266\0\0\0\2\0\0\2\0\0\0\20\0\0\0\0\0"..., 512, 0) = 512 <0.000054>
+2062  17:15:53.951480 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\0\0\0\2", 4, 512) = 4 <0.000032>
+2062  17:15:53.951559 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 516) = 4096 <0.000047>
+2062  17:15:53.951652 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\315\25>\266", 4, 4612) = 4 <0.000032>
+2062  17:15:53.951738 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0 <0.000029>
+2062  17:15:53.951802 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0 <0.000026>
+2062  17:15:53.951872 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\0\0\0\1", 4, 4616) = 4 <0.000027>
+2062  17:15:53.951947 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 4620) = 4096 <0.000040>
+2062  17:15:53.952040 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\315\25>\266", 4, 8716) = 4 <0.000037>
+2062  17:15:53.952118 pread64(4</home/ubuntu/os-lab1/lab1.db-journal>, "", 8, 9216) = 0 <0.000032>
+2062  17:15:53.952188 fdatasync(4</home/ubuntu/os-lab1/lab1.db-journal>) = 0 <0.005362>
+2062  17:15:53.957617 openat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1", O_RDONLY|O_CLOEXEC) = 5</home/ubuntu/os-lab1> <0.000047>
+2062  17:15:53.957730 fdatasync(5</home/ubuntu/os-lab1>) = 0 <0.001126>
+2062  17:15:53.958916 close(5</home/ubuntu/os-lab1>) = 0 <0.000049>
+2062  17:15:53.959018 pwrite64(4</home/ubuntu/os-lab1/lab1.db-journal>, "\331\325\5\371 \241c\327\0\0\0\2", 12, 0) = 12 <0.000043>
+2062  17:15:53.959109 fdatasync(4</home/ubuntu/os-lab1/lab1.db-journal>) = 0 <0.000553>
+2062  17:15:53.959713 pwrite64(3</home/ubuntu/os-lab1/lab1.db>, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\2\0\0\0\2"..., 4096, 0) = 4096 <0.000038>
+2062  17:15:53.959802 pwrite64(3</home/ubuntu/os-lab1/lab1.db>, "\r\0\0\0\2\17\353\0\17\366\17\353\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 4096) = 4096 <0.000035>
+2062  17:15:53.959893 fdatasync(3</home/ubuntu/os-lab1/lab1.db>) = 0 <0.000722>
+2062  17:15:53.960673 close(4</home/ubuntu/os-lab1/lab1.db-journal>) = 0 <0.000034>
+2062  17:15:53.960751 unlinkat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db-journal", 0) = 0 <0.000084>
+2062  17:15:53.960880 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0 <0.000033>
+2062  17:15:53.960977 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=2}) = 0 <0.000030>
+2062  17:15:53.961060 fcntl(3</home/ubuntu/os-lab1/lab1.db>, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000039>
+2062  17:15:53.961160 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0 <0.000041>
+2062  17:15:53.961267 fstat(3</home/ubuntu/os-lab1/lab1.db>, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0 <0.000048>
+2062  17:15:53.961387 newfstatat(AT_FDCWD</home/ubuntu/os-lab1>, "/home/ubuntu/os-lab1/lab1.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0 <0.000046>
+2062  17:15:53.961500 close(3</home/ubuntu/os-lab1/lab1.db>) = 0 <0.000038>
+2062  17:15:53.961653 exit_group(0)     = ?
+2062  17:15:53.961967 +++ exited with 0 +++
