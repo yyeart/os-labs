@@ -1,0 +1,5 @@
+    PID     TID NLWP STAT COMMAND
+   1754    1754    4 Sl+  filter
+   1754    1755    4 Sl+  filter
+   1754    1756    4 Sl+  filter
+   1754    1757    4 Sl+  filter
